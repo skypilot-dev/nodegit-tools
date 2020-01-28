@@ -87,6 +87,12 @@ getOidSha(oid: Oid): string
 async findReferenceByTagName(tagName: string, { repository?: Repository }): Promise<Reference>
 ```
 
+#### retrieveCurrentBranchReference
+
+```
+async retrieveCurrentBranchReference({ repository?: Repository }): Promise<Reference>
+```
+
 ### Repo functions
 
 #### openRepo
