@@ -1,3 +1,4 @@
+export { findCommitByBranchName } from './findCommitByBranchName';
 export { findCommitByOid } from './findCommitByOid';
 export { findCommitByReference } from './findCommitByReference';
 export { findCommitBySha } from './findCommitBySha';

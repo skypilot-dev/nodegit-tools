@@ -5,6 +5,12 @@ A collection of utilities for working with NodeGit
 
 ### Commit functions
 
+#### findCommitByBranchName
+
+```
+async findCommitByBranchName(branchName: string, { repository?: Repository }): Promise<Commit>
+```
+
 #### findCommitByOid
 
 ```
