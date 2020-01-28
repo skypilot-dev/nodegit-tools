@@ -38,3 +38,9 @@ async findReferenceByTagName(tagName: string, { repository?: Repository }): Prom
 ```
 async openRepository({ path?: string }): Promise<Repository>
 ```
+
+### Tag functions
+
+```
+async retrieveTagNames({ repository?: Repository }): Promise<string[]>
+```
