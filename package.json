@@ -37,7 +37,8 @@
     "utilities"
   ],
   "devDependencies": {
-    "@skypilot/toolchain": "^1.5.1"
+    "@skypilot/toolchain": "^1.5.1",
+    "@types/nodegit": "^0.26.1"
   },
   "publishConfig": {
     "access": "public"
@@ -45,5 +46,8 @@
   "files": [
     "/lib"
   ],
-  "types": "lib/index.d.ts"
+  "types": "lib/index.d.ts",
+  "dependencies": {
+    "nodegit": "^0.26.4"
+  }
 }
