@@ -11,6 +11,12 @@ A collection of utilities for working with NodeGit
 async findCommitByOid(oid: Oid, { repository?: Repository }): Promise<Commit>
 ```
 
+#### findCommitByReference
+
+```
+async findCommitByReference(reference: Reference, { repository?: Repository }): Promise<Commit>
+```
+
 ### Reference functions
 
 #### findReferenceByTagName
