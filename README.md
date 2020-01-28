@@ -61,6 +61,12 @@ async findMergBaseOid(oidA: Oid, oidB: Oid, { repository?: Repository }): Promis
 async findOidBySha(sha: string, { repository?: Repository }): Promise<Oid>
 ```
 
+#### getOidSha
+
+```
+getOidSha(oid: Oid): string
+```
+
 ### Reference functions
 
 #### findReferenceByTagName
