@@ -35,6 +35,12 @@ async findCommitByTagName(tagName: string, { repository?: Repository }): Promise
 async findRangeOfCommitsByOid(newestOid: Oid, oldestOid: Oid, { repository?: Repository }): Promise<Commit[]>
 ```
 
+#### findRangeOfCommitsBySha
+
+```
+async findRangeOfCommitsBySha(newestSha: string, oldestSha: string, { repository?: Repository }): Promise<Commit[]>
+```
+
 #### getCommitOid
 
 ```
