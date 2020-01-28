@@ -55,6 +55,12 @@ async retrieveHeadCommit({ repository?: Repository }): Promise<Commit>
 async findMergBaseOid(oidA: Oid, oidB: Oid, { repository?: Repository }): Promise<Oid>
 ```
 
+#### findOidBySha
+
+```
+async findOidBySha(sha: string, { repository?: Repository }): Promise<Oid>
+```
+
 ### Reference functions
 
 #### findReferenceByTagName
