@@ -3,6 +3,14 @@ A collection of utilities for working with NodeGit
 
 ## Functions
 
+### Commit functions
+
+#### findCommitByOid
+
+```
+async findCommitByOid(oid: Oid, { repository?: Repository }): Promise<Commit>
+```
+
 ### Reference functions
 
 #### findReferenceByTagName
