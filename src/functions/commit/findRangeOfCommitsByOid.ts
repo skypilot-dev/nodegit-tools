@@ -1,9 +1,6 @@
-import { Commit, Oid, Repository, Revwalk } from 'nodegit';
+import { Commit, Oid, Revwalk } from 'nodegit';
+import { FindRangeOfCommitsOptions } from '../../types';
 import { openRepository } from '../repository';
-
-interface FindRangeOfCommitsOptions {
-  repository?: Repository;
-}
 
 /* TODO: Modify to allow the range of commits in either order. */
 export async function findRangeOfCommitsByOid(
