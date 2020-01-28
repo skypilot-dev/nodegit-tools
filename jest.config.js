@@ -1,8 +1,10 @@
 module.exports = {
   moduleFileExtensions: [
-    'js',
     'ts',
+    'js',
+    'json',
   ],
+  setupFilesAfterEnv: ['./jest.setup.js'],
   testRegex: '__tests__/.*.test.ts$',
   /* Define preprocessors */
   transform: {
