@@ -17,6 +17,12 @@ async findCommitByOid(oid: Oid, { repository?: Repository }): Promise<Commit>
 async findCommitByReference(reference: Reference, { repository?: Repository }): Promise<Commit>
 ```
 
+#### findCommitByTagName
+
+```
+async findCommitByTagName(tagName: string, { repository?: Repository }): Promise<Commit>
+```
+
 ### Reference functions
 
 #### findReferenceByTagName
