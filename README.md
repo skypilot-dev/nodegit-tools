@@ -29,6 +29,14 @@ async findCommitByTagName(tagName: string, { repository?: Repository }): Promise
 async retrieveHeadCommit({ repository?: Repository }): Promise<Commit>
 ```
 
+### Oid (object ID) functions
+
+#### findMergeBaseOid
+
+```
+async findMergBaseOid(oidA: Oid, oidB: Oid, { repository?: Repository }): Promise<Oid>
+```
+
 ### Reference functions
 
 #### findReferenceByTagName
