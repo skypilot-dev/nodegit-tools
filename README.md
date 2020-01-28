@@ -47,6 +47,12 @@ async findRangeOfCommitsByOid(newestOid: Oid, oldestOid: Oid, { repository?: Rep
 async findRangeOfCommitsBySha(newestSha: string, oldestSha: string, { repository?: Repository }): Promise<Commit[]>
 ```
 
+#### getCommitMessage
+
+```
+getCommitMessage(commit: Commit): string
+```
+
 #### getCommitOid
 
 ```
