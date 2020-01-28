@@ -23,6 +23,12 @@ async findCommitByReference(reference: Reference, { repository?: Repository }): 
 async findCommitByTagName(tagName: string, { repository?: Repository }): Promise<Commit>
 ```
 
+#### retrieveHeadCommit
+
+```
+async retrieveHeadCommit({ repository?: Repository }): Promise<Commit>
+```
+
 ### Reference functions
 
 #### findReferenceByTagName
