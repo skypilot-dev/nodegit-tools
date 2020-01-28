@@ -3,8 +3,25 @@
   "version": "0.0.0",
   "description": "A collection of utilities for working with NodeGit",
   "main": "lib/index.js",
-  "repository": "https://github.com/skypilotcc/nodegit-tools.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skypilotcc/nodegit-tools.git"
+  },
   "author": "William Thorsen <william@thorsen.dev>",
   "license": "ISC",
-  "private": false
+  "private": false,
+  "bugs": {
+    "url": "https://github.com/skypilotcc/nodegit-tools/issues"
+  },
+  "homepage": "https://github.com/skypilotcc/nodegit-tools#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "git",
+    "nodegit",
+    "convenience",
+    "functions",
+    "utilities"
+  ]
 }
