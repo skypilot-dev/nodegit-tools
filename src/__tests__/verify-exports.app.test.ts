@@ -9,7 +9,6 @@ const intendedExports: string[] = [
   'findCommitByTagName',
   'findRangeOfCommitsByOid',
   'findRangeOfCommitsBySha',
-  'getCommitMessage',
   'getCommitOid',
   'getCommitRecord',
   'retrieveHeadCommit',
