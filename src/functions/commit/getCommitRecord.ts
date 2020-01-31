@@ -1,6 +1,6 @@
 import { Commit } from 'nodegit';
 
-interface CommitRecord {
+export interface CommitRecord {
   date: Date;
   message: string;
   sha: string;
