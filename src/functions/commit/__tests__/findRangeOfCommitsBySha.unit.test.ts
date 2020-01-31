@@ -14,7 +14,9 @@ describe('findRangeOfCommitsBySha(:string, :string)', () => {
     const parentSha = parentCommit.id().tostrS();
 
     const commits: Commit[] = await findRangeOfCommitsBySha(headSha, parentSha);
-    expect(commits).toHaveLength(2);
+    /* The length will be 2 if the previous commit was a fast-forward, or greater than two
+     * if it was a merge commit. */
+    expect(commits.length).toBeGreaterThan(1);
     expect(commits[0]).toBeInstanceOf(Commit);
   });
 });
