@@ -105,6 +105,12 @@ async findReferenceByTagName(tagName: string, { repository?: Repository }): Prom
 getReferenceShorthand(reference: Reference): string
 ```
 
+#### retrieveCurrentBranchName
+
+```
+async retrieveCurrentBranchName({ repository?: Repository }): Promise<Reference>
+```
+
 #### retrieveCurrentBranchReference
 
 ```
