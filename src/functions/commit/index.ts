@@ -7,5 +7,5 @@ export { findRangeOfCommitsByOid } from './findRangeOfCommitsByOid';
 export { findRangeOfCommitsBySha } from './findRangeOfCommitsBySha';
 export { getCommitMessage } from './getCommitMessage';
 export { getCommitOid } from './getCommitOid';
-export { getCommitSha } from './getCommitSha';
+export { getCommitRecord } from './getCommitRecord';
 export { retrieveHeadCommit } from './retrieveHeadCommit';

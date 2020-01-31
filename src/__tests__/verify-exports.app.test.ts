@@ -11,7 +11,7 @@ const intendedExports: string[] = [
   'findRangeOfCommitsBySha',
   'getCommitMessage',
   'getCommitOid',
-  'getCommitSha',
+  'getCommitRecord',
   'retrieveHeadCommit',
 
   /* Oid functions */

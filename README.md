@@ -59,10 +59,10 @@ getCommitMessage(commit: Commit): string
 getCommitOid(commit: Commit): Oid
 ```
 
-#### getCommitSha
+#### getCommitRecord
 
 ```
-getCommitSha(commit: Commit): string
+getCommitRecord(commit: Commit): { date: Date, sha: string } 
 ```
 
 #### retrieveHeadCommit
