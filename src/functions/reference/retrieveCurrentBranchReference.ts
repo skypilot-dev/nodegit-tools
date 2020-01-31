@@ -1,19 +1,22 @@
 import { Reference, Repository } from 'nodegit';
 import { openRepository } from '../repository';
 
-interface RetrieveCurrentBranchReferenceOptions {
+export interface RetrieveCurrentBranchOptions<T> {
   repository?: Repository;
+  transformer?: (ref: Reference) => T;
 }
 
 /* Get a `Reference` object for the current branch. */
-export async function retrieveCurrentBranchReference(
-  options: RetrieveCurrentBranchReferenceOptions = {}
-): Promise<Reference | null> {
+export async function retrieveCurrentBranchReference<T = Reference>(
+  options: RetrieveCurrentBranchOptions<T> = {},
+): Promise<T | null> {
   const {
     repository = await openRepository(),
+    transformer = (reference: Reference) => reference,
   } = options;
   if (!repository) {
     return null;
   }
-  return await repository.getCurrentBranch();
+  const reference: Reference = await repository.getCurrentBranch();
+  return transformer(reference) as T;
 }
