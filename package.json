@@ -37,7 +37,7 @@
     "utilities"
   ],
   "devDependencies": {
-    "@skypilot/toolchain": "^1.9.1-next",
+    "@skypilot/toolchain": "^1.9.1-next.2",
     "@types/nodegit": "^0.26.1"
   },
   "publishConfig": {
