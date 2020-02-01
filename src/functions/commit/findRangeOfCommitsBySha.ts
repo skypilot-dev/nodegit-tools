@@ -1,14 +1,17 @@
-import { Commit } from 'nodegit';
-import { FindRangeOfCommitsOptions } from '../../types';
+import { Commit, Repository } from 'nodegit';
 import { findOidBySha } from '../oid';
 import { openRepository } from '../repository';
 import { findRangeOfCommitsByOid } from './findRangeOfCommitsByOid';
+
+interface FindRangeOfCommitsByShaOptions {
+  repository?: Repository;
+}
 
 /* TODO: Modify to allow the range of commits in either order. */
 export async function findRangeOfCommitsBySha(
   newestSha: string,
   oldestSha: string,
-  options: FindRangeOfCommitsOptions = {}
+  options: FindRangeOfCommitsByShaOptions = {}
 ): Promise<Commit[]> {
   const {
     repository = await openRepository(),
