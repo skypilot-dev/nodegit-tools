@@ -1,19 +1,37 @@
 {
   "name": "@skypilot/nodegit-tools",
-  "version": "0.0.0",
   "description": "A collection of utilities for working with NodeGit",
+  "homepage": "https://github.com/skypilotcc/nodegit-tools#readme",
+  "version": "1.0.0",
   "main": "lib/index.js",
+  "author": {
+    "email": "william@thorsen.dev",
+    "name": "William Thorsen"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/skypilotcc/nodegit-tools.git"
   },
-  "author": "William Thorsen <william@thorsen.dev>",
-  "license": "ISC",
-  "private": false,
   "bugs": {
     "url": "https://github.com/skypilotcc/nodegit-tools/issues"
   },
-  "homepage": "https://github.com/skypilotcc/nodegit-tools#readme",
+  "keywords": [
+    "convenience",
+    "functions",
+    "git",
+    "nodegit",
+    "utilities"
+  ],
+  "dependencies": {
+    "nodegit": "^0.26.4"
+  },
+  "devDependencies": {
+    "@skypilot/toolchain": "^1.14.5",
+    "@types/nodegit": "^0.26.1"
+  },
+  "files": [
+    "/lib"
+  ],
   "scripts": {
     "all-ci-checks": "yarn run all-cq-checks && yarn run build",
     "all-cq-checks": "yarn run typecheck && yarn run lint --quiet && yarn test",
@@ -29,25 +47,10 @@
     "test": "jest",
     "typecheck": "tsc"
   },
-  "keywords": [
-    "git",
-    "nodegit",
-    "convenience",
-    "functions",
-    "utilities"
-  ],
-  "devDependencies": {
-    "@skypilot/toolchain": "^1.14.5",
-    "@types/nodegit": "^0.26.1"
-  },
+  "private": false,
+  "license": "ISC",
   "publishConfig": {
     "access": "public"
   },
-  "files": [
-    "/lib"
-  ],
-  "types": "lib/index.d.ts",
-  "dependencies": {
-    "nodegit": "^0.26.4"
-  }
+  "types": "lib/index.d.ts"
 }
