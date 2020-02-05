@@ -1,4 +1,9 @@
 # @skypilot/nodegit-tools
+
+[![build](https://img.shields.io/github/workflow/status/skypilotcc/nodegit-tools/Build%20&%20publish%20stable%20Node%20package?label=build)]()&nbsp;
+[![npm](https://img.shields.io/npm/v/@skypilot/nodegit-tools?label=npm)](https://www.npmjs.com/package/@skypilot/nodegit-tools)&nbsp;
+[![license: ISC](https://img.shields.io/badge/license-ISC-blue.svg)](https://opensource.org/licenses/ISC)  
+
 A collection of utilities for working with NodeGit
 
 ## Functions
