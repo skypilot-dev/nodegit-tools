@@ -26,7 +26,7 @@
     "nodegit": "^0.26.4"
   },
   "devDependencies": {
-    "@skypilot/toolchain": "^1.14.5",
+    "@skypilot/toolchain": "^1.14.6",
     "@types/nodegit": "^0.26.1"
   },
   "files": [
