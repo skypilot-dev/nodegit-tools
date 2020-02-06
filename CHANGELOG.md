@@ -1,3 +1,11 @@
+## [1.0.7](https://github.com/skypilotcc/nodegit-tools/compare/v1.0.7-next.0...v1.0.7) (2020-02-06)
+
+
+
+## [1.0.7-next.0](https://github.com/skypilotcc/nodegit-tools/compare/v1.0.6...v1.0.7-next.0) (2020-02-06)
+
+
+
 ## [1.0.6](https://github.com/skypilotcc/nodegit-tools/compare/v1.0.6-next.0...v1.0.6) (2020-02-06)
 
 
