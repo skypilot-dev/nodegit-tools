@@ -2,7 +2,7 @@
   "name": "@skypilot/nodegit-tools",
   "description": "A collection of utilities for working with NodeGit",
   "homepage": "https://github.com/skypilotcc/nodegit-tools#readme",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "main": "lib/index.js",
   "author": {
     "email": "william@thorsen.dev",
