@@ -11,5 +11,5 @@ export function getCommitRecord(commit: Commit): CommitRecord {
     date: commit.date(),
     message: commit.message(),
     sha: commit.id().tostrS(),
-  }
+  };
 }

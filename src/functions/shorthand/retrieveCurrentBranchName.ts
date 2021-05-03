@@ -6,5 +6,5 @@ export async function retrieveCurrentBranchName(
 ): Promise<string | null> {
   return retrieveCurrentBranchReference<string>(
     { ...options, transformer: getReferenceShorthand }
-  )
+  );
 }
