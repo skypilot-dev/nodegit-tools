@@ -1,5 +1,6 @@
 import { Commit, Oid, Repository, Revwalk } from 'nodegit';
-import { openRepository } from '../repository';
+
+import { openRepository } from  'src/functions';
 
 interface FindRangeOfCommitsByOidOptions {
   repository?: Repository;

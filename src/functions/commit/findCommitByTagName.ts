@@ -1,7 +1,6 @@
 import { Commit, Repository } from 'nodegit';
-import { findReferenceByTagName } from '../reference';
-import { openRepository } from '../repository';
-import { findCommitByReference } from './findCommitByReference';
+
+import { findCommitByReference, findReferenceByTagName, openRepository } from 'src/functions';
 
 interface FindCommitByTagName {
   repository?: Repository;

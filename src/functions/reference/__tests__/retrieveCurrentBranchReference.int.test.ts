@@ -1,4 +1,5 @@
 import { Reference } from 'nodegit';
+
 import { retrieveCurrentBranchReference } from '../retrieveCurrentBranchReference';
 
 describe('retrieveCurrentBranchReference()', () => {
@@ -8,7 +9,7 @@ describe('retrieveCurrentBranchReference()', () => {
   });
 
   it('given a transformer, should apply the transformer before returning the result', async () => {
-    const transformer = (ref: Reference) => ref.shorthand();
+    const transformer = (ref: Reference): string => ref.shorthand();
     const branchRef = await retrieveCurrentBranchReference<string>({ transformer });
     expect(typeof branchRef).toBe('string');
   });

@@ -1,5 +1,6 @@
 import { Reference, Repository } from 'nodegit';
-import { openRepository } from '../repository';
+
+import { openRepository } from 'src/functions';
 
 interface FindReferenceByTagNameOptions {
   repository?: Repository;

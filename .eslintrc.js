@@ -1,5 +1,13 @@
 module.exports = {
   extends: [
-    './node_modules/@skypilot/toolchain/lib/configs/eslint.js',
+    '@skypilot/eslint-config-typescript',
+  ],
+  overrides: [
+    {
+      files: ['jest.setup.js'],
+      env: {
+        jest: true,
+      },
+    },
   ],
 };

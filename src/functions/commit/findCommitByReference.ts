@@ -1,6 +1,7 @@
 import { Commit, Reference, Repository } from 'nodegit';
-import { OBJECT_TYPE_COMMIT } from '../../constants';
-import { openRepository } from '../repository';
+
+import { OBJECT_TYPE_COMMIT } from 'src/constants';
+import { openRepository } from 'src/functions';
 import { findCommitByOid } from './findCommitByOid';
 
 interface FindCommitByTagName {

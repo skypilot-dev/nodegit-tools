@@ -23,11 +23,14 @@
     "utilities"
   ],
   "dependencies": {
-    "nodegit": "^0.26.4"
+    "nodegit": "^0.27.0"
   },
   "devDependencies": {
-    "@skypilot/toolchain": "^3.3.0",
-    "@types/nodegit": "^0.26.1"
+    "@skypilot/toolchain": "^5.2.3",
+    "@types/nodegit": "^0.27.1"
+  },
+  "engines": {
+    "node": ">=12.13.0"
   },
   "files": [
     "/lib"
@@ -44,18 +47,15 @@
     "prepublishOnly": "yarn run typecheck && yarn run lint --quiet && yarn test && yarn run build",
     "publish:default": "yarn publish --non-interactive",
     "tc": "yarn run typecheck",
-    "test": "jest",
+    "test": "jest --config jest.standalone.config.js",
+    "test:all": "jest --config jest.config.js",
+    "test:int": "jest --config jest.integration.config.js",
     "typecheck": "tsc"
   },
   "private": false,
   "license": "ISC",
   "publishConfig": {
     "access": "public"
-  },
-  "resolutions": {
-    "**/acorn-globals/acorn": "^6.4.1",
-    "**/jsdom/acorn": "^7.1.1",
-    "eslint/**/acorn": "^7.1.1"
   },
   "types": "lib/index.d.ts"
 }

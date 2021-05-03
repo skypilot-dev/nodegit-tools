@@ -1,5 +1,6 @@
 import { Commit, Repository } from 'nodegit';
-import { openRepository } from '../../repository';
+
+import { openRepository } from 'src/functions';
 import { findRangeOfCommitsBySha } from '../findRangeOfCommitsBySha';
 
 describe('findRangeOfCommitsBySha(:string, :string)', () => {

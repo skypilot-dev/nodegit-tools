@@ -1,5 +1,6 @@
 import { Commit, Repository } from 'nodegit';
-import { openRepository } from '../../repository';
+
+import { openRepository } from 'src/functions';
 import { findRangeOfCommitsByOid } from '../findRangeOfCommitsByOid';
 
 describe('findRangeOfCommitsByOid(:Oid, :Oid)', () => {
