@@ -1,4 +1,4 @@
-/* eslint-disable no-underscore-dangle, @typescript-eslint/camelcase */
+/* eslint-disable no-underscore-dangle */
 
 /* From https://github.com/nodegit/nodegit/issues/1679
  In order to patch Jest's Runtime class, we need to require it using NodeJS's `require` function,
@@ -29,3 +29,5 @@ if (!jestRuntime.prototype.__nodegit_patched) {
     return originalRequireModule.apply(this, arguments);
   };
 }
+
+jest.setTimeout(10000);
