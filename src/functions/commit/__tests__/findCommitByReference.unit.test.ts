@@ -17,7 +17,9 @@ beforeAll(async () => {
 });
 
 afterAll(async () => {
-  await Tag.delete(repo, testTagName);
+  if (repo) {
+    await Tag.delete(repo, testTagName);
+  }
 });
 
 describe('findCommitByReference(:Reference)', () => {
