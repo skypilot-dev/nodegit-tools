@@ -9,7 +9,7 @@
  NodeJS `require` function. Mind is blown!
  */
 const Module = require('module');
-const nativeRequire = Module.createRequireFromPath(__filename);
+const nativeRequire = Module.createRequire(__filename);
 
 const jestRuntime = nativeRequire('jest-runtime');
 
