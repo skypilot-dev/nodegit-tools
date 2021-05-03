@@ -1,4 +1,5 @@
 import { Commit } from 'nodegit';
+
 import { retrieveHeadCommit } from '../retrieveHeadCommit';
 
 describe('retrieveHeadCommit()', () => {

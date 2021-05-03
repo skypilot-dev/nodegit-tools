@@ -1,8 +1,7 @@
 import { Object as NodeGitObject, Repository, Tag } from 'nodegit';
 
 import { OBJECT_TYPE_COMMIT, TAG_CREATE_FORCE } from 'src/constants';
-import { openRepository } from 'src/functions/repository';
-
+import { openRepository } from 'src/functions';
 import { retrieveTagNames } from '../retrieveTagNames';
 
 const testTagName = 'test/retrieveTagNames';

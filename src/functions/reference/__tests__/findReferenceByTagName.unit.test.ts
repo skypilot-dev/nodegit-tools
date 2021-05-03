@@ -1,23 +1,24 @@
 import { Object as NodeGitObject, Reference, Repository, Tag } from 'nodegit';
-import { OBJECT_TYPE_COMMIT, TAG_CREATE_FORCE } from '../../../constants';
-import { openRepository } from '../../repository';
+
+import { OBJECT_TYPE_COMMIT, TAG_CREATE_FORCE } from 'src/constants';
+import { openRepository } from 'src/functions';
 import { findReferenceByTagName } from '../findReferenceByTagName';
 
 const testTagName = 'test/findReferenceByTagName';
 
+let repo: Repository;
+beforeAll(async () => {
+  repo = await openRepository() as Repository;
+  const currentObjectId = (await repo.getHeadCommit()).id();
+  const currentObject = await NodeGitObject.lookup(repo, currentObjectId, OBJECT_TYPE_COMMIT);
+  await Tag.createLightweight(repo, testTagName, currentObject, TAG_CREATE_FORCE);
+});
+
+afterAll(async () => {
+  await Tag.delete(repo, testTagName);
+});
+
 describe('findReferenceByTagName(tagName:string)', () => {
-  let repo: Repository;
-  beforeAll(async () => {
-    repo = await openRepository() as Repository;
-    const currentObjectId = (await repo.getHeadCommit()).id();
-    const currentObject = await NodeGitObject.lookup(repo, currentObjectId, OBJECT_TYPE_COMMIT);
-    await Tag.createLightweight(repo, testTagName, currentObject, TAG_CREATE_FORCE);
-  });
-
-  afterAll(async () => {
-    await Tag.delete(repo, testTagName);
-  });
-
   it('should return a Reference to the tag', async () => {
     const reference = await findReferenceByTagName(testTagName);
     expect(reference).toBeInstanceOf(Reference);

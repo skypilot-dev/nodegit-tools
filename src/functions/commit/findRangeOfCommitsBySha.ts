@@ -1,7 +1,6 @@
 import { Commit, Repository } from 'nodegit';
-import { findOidBySha } from '../oid';
-import { openRepository } from '../repository';
-import { findRangeOfCommitsByOid } from './findRangeOfCommitsByOid';
+
+import { findOidBySha, findRangeOfCommitsByOid, openRepository } from 'src/functions';
 
 interface FindRangeOfCommitsByShaOptions {
   repository?: Repository;

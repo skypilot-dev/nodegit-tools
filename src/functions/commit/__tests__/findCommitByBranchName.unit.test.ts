@@ -1,4 +1,5 @@
 import { Commit } from 'nodegit';
+
 import { findCommitByBranchName } from '../findCommitByBranchName';
 
 describe('findCommitByBranchName()', () => {

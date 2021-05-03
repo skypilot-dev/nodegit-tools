@@ -1,4 +1,5 @@
 import { Reference } from 'nodegit';
+
 import { retrieveCurrentBranchReference } from '../retrieveCurrentBranchReference';
 
 describe('retrieveCurrentBranchReference()', () => {

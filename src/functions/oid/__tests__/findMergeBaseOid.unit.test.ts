@@ -1,5 +1,6 @@
 import { Oid, Repository } from 'nodegit';
-import { openRepository } from '../../repository';
+
+import { openRepository } from 'src/functions';
 import { findMergeBaseOid } from '../findMergeBaseOid';
 
 describe('findMergeBaseOid(:Oid, :Oid)', () => {

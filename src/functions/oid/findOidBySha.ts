@@ -1,6 +1,6 @@
 import { Commit, Oid, Repository } from 'nodegit';
-import { findCommitBySha, getCommitOid } from '../commit';
-import { openRepository } from '../repository';
+
+import { findCommitBySha, getCommitOid, openRepository } from 'src/functions';
 
 interface FindOidByShaOptions {
   repository?: Repository;
